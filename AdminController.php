@@ -99,6 +99,17 @@ class AdminController extends Controller
             })
             ->make(true); // Assuming you have an 'action' column in your view
     }
+    public function payment()
+    {
+        // Fetch and pass payment options to the view
+        $payment = [
+            'paypal' => 'PayPal',
+            'stripe' => 'Stripe',
+            // Add more payment options here
+        ];
+
+        return view('payment', compact('payment'));
+    }
 
 
 
