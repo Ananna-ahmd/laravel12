@@ -47,6 +47,7 @@ Route::get('/studentDashboard',[AdminController::class,'studentDashboard'])->nam
 Route::get('/instructorDashboard',[AdminController::class,'instructorDashboard'])->name('instructorDashboard');
 Route::get('/datatable',[MyController::class,'dataTable'])->name('datatable');
 Route::get('/studenttable',[AdminController::class,'studentTable'])->name('studentTable');
+Route::get('/paymentOptions',[AdminController::class,'payment'])->name('payment');
 Route::post('/ajax-get-user-data',[MyController::class,'getUserData'])->name('ajax-get-user-data');
 Route::delete('/deleteUser',[MyController::class,'deleteUser'])->name('deleteUser');
 //Route::put('/update-data/{id}', 'MyController')->name('update.data');
